@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+    dev:
+        image: node
+        volumes:
+          - .:/usr/src/service
+        working_dir: /usr/src/service
+        command: npm run dev
+        ports:
+            - 3000:3000
+
+    base:
+        image: node
+        volumes:
+          - .:/usr/src/service
+        working_dir: /usr/src/service
+    
+    install:
+        extends:
+          service: base
+        command: npm install
+    
+    build:
+        extends:
+          service: base
+        command: npm run build
+    
+    create-bundles:
+        extends:
+          service: base
+        command: npm run create-bundles
