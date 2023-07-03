@@ -16,7 +16,7 @@
 - Run `npm run dev`
 
 
-## 👷‍♂️ Build
+## 👷 Build
 
 To preview the current state you can run `npm run build` followed by `npm run preview` and open the site in your local browser.
 
