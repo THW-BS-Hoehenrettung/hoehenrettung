@@ -26,7 +26,6 @@ If you want to preview the current state with docker, run this command from the 
 ## 🚚 Built With
 - <a href="https://astro.build/">Astro</a>
 - <a href="https://tailwindcss.com/">Tailwindcss</a>
-- <a href="https://svelte.dev/">Svelte</a>
 
 ## 👀 Want to learn more about our heigth rescue group?
 
