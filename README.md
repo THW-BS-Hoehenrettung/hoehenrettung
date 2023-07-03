@@ -23,10 +23,10 @@ To preview the current state you can run `npm run build` followed by `npm run pr
 If you want to preview the current state with docker, run this command from the project root (windows): `docker run -it --rm -p 8080:80 -v ${pwd}/dist:/usr/share/nginx/html:ro nginx`
 
 
-## 🚚 Built With
+## 🏗️ Built With
 - <a href="https://astro.build/">Astro</a>
 - <a href="https://tailwindcss.com/">Tailwindcss</a>
 
 ## 👀 Want to learn more about our heigth rescue group?
 
-Feel free to check out our website at <a href="http://www.höhenrettung-bs.de/">http://www.höhenrettung-bs.de/</a> or <a href="http://www.hoehenrettung-bs.de/">http://www.höhenrettung-bs.de/</a>
+Feel free to check out our website at <a href="http://www.hoehenrettung-bs.de/">http://www.höhenrettung-bs.de/</a> or <a href="http://www.hoehenrettung-bs.de/">http://www.höhenrettung-bs.de/</a>
