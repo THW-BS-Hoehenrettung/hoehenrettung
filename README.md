@@ -1,55 +1,33 @@
-# Astro Starter Kit: Basics
+<h1 align="center">
+  <br>
+  <img src="logo_white_bg.png" alt="THW Höhenrettung" width="200">
+  <br>
+  THW Höhenrettung
+  <br>
+</h1>
 
-```
-npm create astro@latest -- --template basics
-```
+<h4 align="center">Website of the THW Height Rescue Group Braunschweig</h4>
+<h6 align="center">This is not an offical repository of the THW</h6>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## ⚙️ Install and run locally
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+- Clone the repository
+- Run `npm install`
+- Run `npm run dev`
 
 
-## 🚀 Project Structure
+## 👷‍♂️ Build
 
-Inside of your Astro project, you'll see the following folders and files:
+To preview the current state you can run `npm run build` followed by `npm run preview` and open the site in your local browser.
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+If you want to preview the current state with docker, run this command from the project root (windows): `docker run -it --rm -p 8080:80 -v ${pwd}/dist:/usr/share/nginx/html:ro nginx`
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🚚 Built With
+- <a href="https://astro.build/">Astro</a>
+- <a href="https://tailwindcss.com/">Tailwindcss</a>
+- <a href="https://svelte.dev/">Svelte</a>
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 👀 Want to learn more about our heigth rescue group?
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check out our website at <a href="http://www.höhenrettung-bs.de/">http://www.höhenrettung-bs.de/</a> or <a href="http://www.hoehenrettung-bs.de/">http://www.höhenrettung-bs.de/</a>
