@@ -6,7 +6,7 @@
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
     "format": "prettier -w ./src",
     "generate-json": "node scripts/jsonGenerator.js",
@@ -37,7 +37,6 @@
     "react-lite-youtube-embed": "^2.3.52",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^8.0.1",
-    "sharp": "^0.32.1",
     "swiper": "^9.4.1"
   },
   "devDependencies": {
