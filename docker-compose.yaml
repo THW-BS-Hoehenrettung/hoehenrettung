@@ -1,10 +1,14 @@
 version: '3'
 
+volumes:
+  ignore:
+
 services:
     dev:
         image: node
         volumes:
-          - .:/usr/src/service
+          - ./:/usr/src/service
+          - ignore:/usr/src/service/node_modules/
         working_dir: /usr/src/service
         command: npm run dev
         ports:
@@ -13,7 +17,8 @@ services:
     base:
         image: node
         volumes:
-          - .:/usr/src/service
+          - ./:/usr/src/service
+          - ignore:/usr/src/service/node_modules/
         working_dir: /usr/src/service
     
     install:
