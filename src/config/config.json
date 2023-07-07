@@ -1,10 +1,10 @@
 {
   "site": {
-    "title": "Höhenrettung THW BS",
-    "base_url": "https://astroplate.netlify.app",
+    "title": "THW Höhenrettung Braunschweig",
+    "base_url": "https://hoehenrettung-bs.de",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/logo.svg",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "45",
