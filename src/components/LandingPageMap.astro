@@ -1,0 +1,18 @@
+---
+import "leaflet/dist/leaflet.css";
+import Map from "./Map.svelte"
+
+const location = {
+  latitude: 52.251133354347495,
+  longitude: 10.495001363056113,
+};
+---
+
+<div class="h-96">
+    <Map
+            client:load
+            location={location}
+            zoom={16}
+            markerMarkup="<strong>THW OV Braunschweig</strong>"
+    />
+</div>
