@@ -1,21 +1,9 @@
 ---
 import Base from "@/layouts/Base.astro";
-import {markdownify} from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
-import type {Button, Feature} from "@/types";
 import {Image} from "@astrojs/image/components";
-import {getEntryBySlug} from "astro:content";
 import LandingPageMap from "../components/LandingPageMap.astro";
-
-interface Homepage {
-  features: Feature[];
-}
-
-const homepage = await getEntryBySlug("homepage", "index");
-const testimonial = await getEntryBySlug("sections", "testimonial");
-const call_to_action = await getEntryBySlug("sections", "call-to-action");
-const {banner, features}: Homepage = homepage.data;
 ---
 
 <Base>
@@ -28,7 +16,8 @@ const {banner, features}: Homepage = homepage.data;
                 <p>Seit 1998 in Braunschweig</p>
             </div>
             <div class="col-12">
-                <img
+                <Image
+                        format="png"
                         src="/images/banner.png"
                         width="1272"
                         height="403"
