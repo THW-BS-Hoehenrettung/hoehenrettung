@@ -21,32 +21,32 @@ h6 {
 
 h1,
 .h1 {
-  @apply text-h1-sm md:text-h1;
+  @apply text-4xl md:text-6xl;
 }
 
 h2,
 .h2 {
-  @apply text-h2-sm md:text-h2;
+  @apply text-3xl md:text-5xl;
 }
 
 h3,
 .h3 {
-  @apply text-h3-sm md:text-h3;
+  @apply text-2xl md:text-4xl;
 }
 
 h4,
 .h4 {
-  @apply text-h4 font-medium;
+  @apply text-3xl font-medium;
 }
 
 h5,
 .h5 {
-  @apply text-h5 font-medium;
+  @apply text-2xl font-medium;
 }
 
 h6,
 .h6 {
-  @apply text-h6 font-medium;
+  @apply text-xl font-medium;
 }
 
 b,
