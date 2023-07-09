@@ -43,5 +43,19 @@
         }
       ]
     }
+  ],
+  "footer": [
+    {
+      "name": "Impressum",
+      "url": "/impressum"
+    },
+    {
+      "name": "Datenschutz",
+      "url": "/datenschutz"
+    },
+    {
+      "name": "Sitemap",
+      "url": "/sitemap"
+    }
   ]
 }
