@@ -9,10 +9,10 @@ const { footer }: { footer: { name: string; url: string }[] } = menu;
 
 <footer class="bg-theme-light dark:bg-darkmode-theme-light">
     <div class="container">
-        <div class="row items-center py-10">
-            <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:text-left">
+        <div class="row items-center">
+            <div class="mb-4 text-center lg:col-3 lg:mb-0 lg:text-left">
             </div>
-            <div class="mb-8 text-center lg:col-6 lg:mb-0">
+            <div class="mb-4 text-center lg:col-6 lg:mb-0">
                 <ul>
                     {
                       footer.map((menu) => (
@@ -23,7 +23,7 @@ const { footer }: { footer: { name: string; url: string }[] } = menu;
                     }
                 </ul>
             </div>
-            <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
+            <div class="mb-4 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
                 <ul class="social-icons">
                     <li class="m-3 inline-block">
                         <a
@@ -40,7 +40,7 @@ const { footer }: { footer: { name: string; url: string }[] } = menu;
             </div>
         </div>
     </div>
-    <div class="border-t border-border py-7 dark:border-darkmode-border">
+    <div class="border-t border-border py-5 dark:border-darkmode-border">
         <div class="container text-center text-light dark:text-darkmode-light">
             <p set:html={markdownify(config.params.copyright)} />
         </div>
