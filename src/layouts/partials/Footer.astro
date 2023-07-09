@@ -1,21 +1,26 @@
 ---
-import Logo from "@/components/Logo.astro";
+import config from "@/config/config.json";
+import menu from "@/config/menu.json";
 import DynamicIcon from "../helpers/DynamicIcon";
+import { markdownify } from "@/lib/utils/textConverter";
+
+const { footer }: { footer: { name: string; url: string }[] } = menu;
 ---
 
 <footer class="bg-theme-light dark:bg-darkmode-theme-light">
     <div class="container">
         <div class="row items-center py-10">
             <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:text-left">
-                <Logo/>
-                <span class="font-extrabold">THW-Höhenrettung Braunschweig</span>
             </div>
             <div class="mb-8 text-center lg:col-6 lg:mb-0">
                 <ul>
-                    <li class="m-3 inline-block">
-                        <a href=/impressum>Impressum</a>
-                        <p>Bilder und Texte © by THW-Höhenrettung Braunschweig</p>
-                    </li>
+                    {
+                      footer.map((menu) => (
+                        <li class="m-3 inline-block">
+                            <a href={menu.url}>{menu.name}</a>
+                        </li>
+                      ))
+                    }
                 </ul>
             </div>
             <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
@@ -33,6 +38,11 @@ import DynamicIcon from "../helpers/DynamicIcon";
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+    <div class="border-t border-border py-7 dark:border-darkmode-border">
+        <div class="container text-center text-light dark:text-darkmode-light">
+            <p set:html={markdownify(config.params.copyright)} />
         </div>
     </div>
 </footer>

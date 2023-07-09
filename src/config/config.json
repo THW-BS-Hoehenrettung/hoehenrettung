@@ -1,10 +1,10 @@
 {
   "site": {
-    "title": "THW Höhenrettung Braunschweig",
+    "title": "THW Braunschweig Höhenrettung",
     "base_url": "https://hoehenrettung-bs.de",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/logo.svg",
+    "favicon": "/images/favicon.svg",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "45",
@@ -24,7 +24,7 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "Copyright © 2023 THW Braunschweig Höhenrettung"
   },
 
   "disqus": {
