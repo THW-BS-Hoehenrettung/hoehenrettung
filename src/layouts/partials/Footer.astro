@@ -42,7 +42,13 @@ const { footer }: { footer: { name: string; url: string }[] } = menu;
     </div>
     <div class="border-t border-border py-5 dark:border-darkmode-border">
         <div class="container text-center text-light dark:text-darkmode-light">
-            <p set:html={markdownify(config.params.copyright)} />
+            <p id="copyright" set:html={markdownify(config.params.copyright)} />
         </div>
     </div>
 </footer>
+<script lang="ts">
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.getElementById("copyright");
+    const updatedString = copyrightElement.innerHTML.replace("YYYY", currentYear);
+    copyrightElement.innerHTML = updatedString;
+</script>
