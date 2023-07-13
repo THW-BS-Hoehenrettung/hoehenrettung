@@ -74,6 +74,9 @@ module.exports = {
             },
             width: {
                 '128': '32rem',
+            },
+            zIndex: {
+                '10000': '10000'
             }
         },
     },
