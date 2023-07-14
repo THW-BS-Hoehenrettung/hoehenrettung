@@ -3,8 +3,8 @@ import Base from "@/layouts/Base.astro";
 import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
 import {Image} from "@astrojs/image/components";
-import Carousel from "../components/carousel.astro";
 import LandingPageMap from "../components/LandingPageMap.astro";
+import BannerCarousel from "../components/carousel";
 ---
 
 <Base>
@@ -13,7 +13,7 @@ import LandingPageMap from "../components/LandingPageMap.astro";
     <div class="container">
         <div class="row justify-center">
             <div class="col-12">
-                <Carousel />
+                <BannerCarousel client:load />
                 <!-- <img class="rounded-2xl" src="/images/picture01.jpg" alt="Banner"/>-->
             </div>
             <!--<div class="mt-4 text-center lg:col-7">-->
