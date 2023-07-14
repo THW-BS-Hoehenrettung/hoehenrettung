@@ -11,6 +11,6 @@
 </script>
 
 <figure
-        class="h-full w-full"
+        class="h-full w-full rounded-2xl"
         use:setMap={{ latitude, longitude, zoom, markerMarkup }}>
 </figure>
