@@ -1,0 +1,24 @@
+name: Lint
+
+on: pull_request
+
+env:
+  NODE_VERSION: 18
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Codestyle Check
+        run: npm run lint
