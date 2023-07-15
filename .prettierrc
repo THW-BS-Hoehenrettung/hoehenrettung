@@ -5,6 +5,11 @@
       "options": {
         "parser": "astro"
       }
+    },
+    {
+      "files": ["*.jsx"],
+      "trailingComma": "es5",
+      "singleQuote": true
     }
   ]
 }
