@@ -2,9 +2,7 @@
   "overrides": [
     {
       "files": ["*.astro"],
-      "options": {
-        "parser": "astro"
-      }
+      "options": {}
     },
     {
       "files": ["*.jsx"],
