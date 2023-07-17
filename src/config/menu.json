@@ -55,6 +55,10 @@
     {
       "name": "Sitemap",
       "url": "/sitemap"
+    },
+    {
+      "name": "Kontakt",
+      "url": "/contact"
     }
   ]
 }
