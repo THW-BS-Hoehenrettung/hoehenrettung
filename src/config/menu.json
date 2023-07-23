@@ -26,15 +26,15 @@
       "children": [
         {
           "name": "Fahrzeug",
-          "url": "vehicle"
+          "url": "/vehicle"
         },
         {
           "name": "PSAgA",
-          "url": "psaga"
+          "url": "/psaga"
         },
         {
           "name": "Weitere Ausrüstung",
-          "url": "gear"
+          "url": "/gear"
         }
       ]
     },
