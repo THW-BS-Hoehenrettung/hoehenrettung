@@ -1,0 +1,92 @@
+---
+import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
+import config from "@/config/config.json";
+import Footer from "@/partials/Footer.astro";
+import Header from "@/partials/Header.astro";
+import "@/styles/main.scss";
+import "@fortawesome/fontawesome-free/css/all.css"
+
+const {frontmatter} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- favicon -->
+    <link rel="shortcut icon" href={config.site.favicon}/>
+    <!-- theme meta -->
+    <meta name="msapplication-TileColor" content="#000000"/>
+    <meta name="generator" content={Astro.generator}/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <!-- responsive meta -->
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+
+    <!-- title -->
+    <title>
+        {frontmatter.title}
+    </title>
+
+    <!-- meta-description -->
+    <meta
+            name="description"
+            content={frontmatter.description}
+    />
+
+    <!-- author from config.json -->
+    <meta name="author" content={config.metadata.meta_author}/>
+
+    <!-- og-title -->
+    <meta
+            property="og:title"
+            content={frontmatter.title}
+    />
+
+    <!-- og-description -->
+    <meta
+            property="og:description"
+            content={frontmatter.description}
+    />
+    <meta property="og:type" content="website"/>
+    <meta
+            property="og:url"
+            content={`${config.site.base_url}/`}
+    />
+
+    <!-- twitter-title -->
+    <meta
+            name="twitter:title"
+            content={frontmatter.title}
+    />
+
+    <!-- twitter-description -->
+    <meta
+            name="twitter:description"
+            content={frontmatter.description}
+    />
+</head>
+<body>
+<TwSizeIndicator/>
+<div class="bg-red-500  flex items-center justify-center">
+    <p class="font-extrabold text-xl">This page is under construction</p>
+</div>
+<Header/>
+<main id="main-content">
+    <section class="section-sm">
+        <div class="container">
+            <div class="row justify-center">
+                <div class="md:col-10 lg:col-7">
+                    <div class="content">
+                        <slot/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<Footer/>
+</body>
+</html>

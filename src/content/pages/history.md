@@ -5,7 +5,7 @@ description: "Geschichte der THW Höhenrettung in Braunschweig"
 draft: false
 ---
 
-**Lang war der Weg ...**
+### Lang war der Weg ...
 
 Kurz nach seinem Antritt als Leiter der Schnelleinsatzeinheit im Jahre 1993 sah sich der Zugführer Jan Kämpen mit der Problematik der Absturzsicherung von Helfern und der Frage der Rettung von Verunglückten aus großen Höhen konfrontiert. Die Tatsache, dass Helfer seines Zuges alpine Kletterer waren, sowie der Spezielle Rettungsdienst (SRD) der kurz zuvor ins Blickfeld gerückten Neuen Bundesländer weckten die Idee, im Ortsverband Braunschweig eine Höhenrettungsgruppe zu installieren.
 
