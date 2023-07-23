@@ -5,47 +5,42 @@
       "url": "/"
     },
     {
-      "name": "Geschichte",
-      "url": "/history"
+      "name": "Über uns",
+      "url": "/about",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Wer sind wir?",
+          "url": "/about"
+        },
+        {
+          "name": "Geschichte",
+          "url": "/history"
+        }
+      ]
     },
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Elements",
-      "url": "/elements"
-    },
-    {
-      "name": "Pages",
+      "name": "Ausrüstung",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Contact",
-          "url": "/contact"
+          "name": "Fahrzeug",
+          "url": "vehicle"
         },
         {
-          "name": "Blog",
-          "url": "/blog"
+          "name": "PSAgA",
+          "url": "psaga"
         },
         {
-          "name": "Authors",
-          "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Search",
-          "url": "/search"
-        },
-        {
-          "name": "404 Page",
-          "url": "/404"
+          "name": "Weitere Ausrüstung",
+          "url": "gear"
         }
       ]
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
     }
   ],
   "footer": [
@@ -60,6 +55,10 @@
     {
       "name": "Sitemap",
       "url": "/sitemap"
+    },
+    {
+      "name": "Kontakt",
+      "url": "/contact"
     }
   ]
 }
