@@ -1,10 +1,8 @@
 ---
 import Base from "@/layouts/Base.astro";
-import CallToAction from "@/partials/CallToAction.astro";
-import Testimonial from "@/partials/Testimonial.astro";
-import {Image} from "@astrojs/image/components";
 import LandingPageMap from "../components/LandingPageMap.astro";
 import BannerCarousel from "../components/carousel";
+import Contact from "../components/Contact.astro";
 ---
 
 <Base>
@@ -14,13 +12,7 @@ import BannerCarousel from "../components/carousel";
         <div class="row justify-center">
             <div class="col-12">
                 <BannerCarousel client:load />
-                <!-- <img class="rounded-2xl" src="/images/picture01.jpg" alt="Banner"/>-->
             </div>
-            <!--<div class="mt-4 text-center lg:col-7">-->
-            <!--    <h1>THW-Höhenrettung Braunschweig</h1>-->
-            <!--    &lt;!&ndash;<p>Seit 1998 in Braunschweig</p>&ndash;&gt;-->
-            <!--</div>-->
-
         </div>
     </div>
 </section>
@@ -30,11 +22,11 @@ import BannerCarousel from "../components/carousel";
     <div class="container">
         <div class="row items-center justify-between">
             <div class="mb:md-0 mb-6 md:col-5 md:order-2">
-                <div class="w-auto max-w-xl md:float-right">
+                <div class="w-auto max-w-xl md:float-left">
                     <img class="rounded-2xl" src="/images/einsatzmoeglichkeiten.jpg" alt="Einsatzmoeglichkeiten"/>
                 </div>
             </div>
-            <div class="md:col-7 lg:col-6 md:order-2">
+            <div class="md:col-7 lg:col-6 md:order-1 md:text-right">
                 <h2 class="mb-4">Einsatzmöglichkeiten </h2>
                 <p class="mb-4 text-lg">Als Höhenretter sind wir vielseitig einsetzbar. Zu unseren
                     Haupt-Einsatzmöglichkeiten gehören:</p>
@@ -69,11 +61,11 @@ import BannerCarousel from "../components/carousel";
     <div class="container">
         <div class="row items-center justify-between">
             <div class="mb:md-0 mb-6 md:col-5 md:order-2">
-                <div class="w-auto max-w-xl md:float-left">
+                <div class="w-auto max-w-xl md:float-right">
                     <img class="rounded-2xl" src="/images/geschichte.jpg" alt="Geschichte"/>
                 </div>
             </div>
-            <div class="md:col-7 lg:col-6 md:order-1 md:text-right">
+            <div class="md:col-7 lg:col-6 md:order-2">
                 <h2 class="mb-4">Geschichte </h2>
                 <p class="mb-4 text-lg">
                     Die THW-Höhenrettungsgruppe in Braunschweig besteht seit 1998. Unsere Wurzeln reichen aber bis in
@@ -86,6 +78,8 @@ import BannerCarousel from "../components/carousel";
         </div>
     </div>
 </section>
+
+<Contact></Contact>
 
 <!-- Map -->
 <section class="section-sm bg-gradient">
