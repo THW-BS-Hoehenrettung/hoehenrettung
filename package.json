@@ -12,7 +12,7 @@
     "generate-json": "node scripts/jsonGenerator.js"
   },
   "dependencies": {
-    "@astrojs/image": "^0.17.3",
+    "@astrojs/image": "^0.18.0",
     "@astrojs/mdx": "^0.19.7",
     "@astrojs/react": "^2.2.1",
     "@astrojs/rss": "^3.0.0",
