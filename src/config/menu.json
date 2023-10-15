@@ -10,10 +10,6 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Wer sind wir?",
-          "url": "/about"
-        },
-        {
           "name": "Geschichte",
           "url": "/history"
         }
@@ -39,8 +35,8 @@
       ]
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Beiträge",
+      "url": "/posts"
     }
   ],
   "footer": [
@@ -54,7 +50,7 @@
     },
     {
       "name": "Kontakt",
-      "url": "/contact"
+      "url": "/#contact"
     }
   ]
 }
