@@ -37,7 +37,7 @@
     "react-icons": "^4.11.0",
     "react-lite-youtube-embed": "^2.3.52",
     "remark-collapse": "^0.1.2",
-    "remark-toc": "^8.0.1",
+    "remark-toc": "^9.0.0",
     "svelte": "^4.2.1",
     "swiper": "^10.3.1"
   },
