@@ -1,0 +1,43 @@
+---
+import BlogCard from "@/components/BlogCard.astro";
+import config from "@/config/config.json";
+import {getSinglePage} from "@/lib/contentParser.astro";
+import {getAllTaxonomy, getTaxonomy} from "@/lib/taxonomyParser.astro";
+import {sortByDate} from "@/lib/utils/sortFunctions";
+import {getEntryBySlug} from "astro:content";
+
+const {blog_folder} = config.settings;
+await getEntryBySlug<any, string>(blog_folder, "-index");
+const posts = await getSinglePage(blog_folder);
+await getAllTaxonomy(blog_folder, "categories");
+const categories = await getTaxonomy(blog_folder, "categories");
+const tags = await getTaxonomy(blog_folder, "tags");
+const sortedPosts = sortByDate(posts);
+Math.ceil(posts.length / config.settings.pagination);
+const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+---
+
+
+<section class="section-sm bg-gradient">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="flex justify-center">
+                <h2 class="mb-4">Aktuelle Beiträge</h2>
+            </div>
+            <div class="row">
+              {
+                currentPosts.map((post) => (
+                        <div class="mb-14 md:col-4">
+                            <BlogCard data={post}/>
+                        </div>
+                ))
+              }
+            </div>
+            <div class="flex justify-center">
+                <a class="btn btn-primary mt-5" href="/posts">
+                    Alle Beiträge
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

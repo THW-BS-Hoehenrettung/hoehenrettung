@@ -5,31 +5,34 @@ import BannerCarousel from "../components/carousel";
 import Contact from "../components/Contact.astro";
 import History from "../components/History.astro";
 import UseCases from "../components/UseCases.astro";
+import PostSection from "../components/PostSection.astro";
 ---
 
 <Base>
-<!-- Banner -->
-<section class="section pt-0">
-    <div class="container">
-        <div class="row justify-center">
-            <div class="col-12">
-                <BannerCarousel client:load />
+    <!-- Banner -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col-12">
+                    <BannerCarousel client:load/>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<History></History>
+    <History></History>
 
-<UseCases></UseCases>
+    <UseCases></UseCases>
 
-<Contact></Contact>
+    <PostSection></PostSection>
 
-<!-- Map -->
-<section class="section-sm bg-gradient">
-    <div class="container">
-        <LandingPageMap/>
-    </div>
-</section>
+    <Contact></Contact>
+
+    <!-- Map -->
+    <section class="section-sm bg-gradient">
+        <div class="container">
+            <LandingPageMap/>
+        </div>
+    </section>
 
 </Base>

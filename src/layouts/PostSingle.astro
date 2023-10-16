@@ -98,19 +98,5 @@ const { title, description, author, categories, image, date, tags } = post.data;
         <Disqus className="mt-20" client:load />
       </article>
     </div>
-
-    <!-- Related posts -->
-    <div class="section pb-0">
-      <h2 class="h3 mb-12 text-center">Related Posts</h2>
-      <div class="row justify-center">
-        {
-          similarPosts.map((post) => (
-            <div class="lg:col-4">
-              <BlogCard data={post} />
-            </div>
-          ))
-        }
-      </div>
-    </div>
   </div>
 </section>
