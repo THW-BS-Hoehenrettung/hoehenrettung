@@ -46,12 +46,9 @@ export async function getStaticPaths() {
   image={postIndex.data.image}
   description={postIndex.data.description}
 >
-  <PageHeader title={postIndex.data.title} />
   <section class="section">
     <div class="container">
       <div class="row gx-5">
-        <!-- blog posts -->
-        <div class="lg:col-8">
           <div class="row">
             {
               currentPosts.map((post) => (
@@ -66,14 +63,6 @@ export async function getStaticPaths() {
             currentPage={currentPage}
             totalPages={totalPages}
           />
-        </div>
-
-        <!-- sidebar -->
-        <PostSidebar
-          categories={categories}
-          tags={tags}
-          allCategories={allCategories}
-        />
       </div>
     </div>
   </section>
