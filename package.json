@@ -12,23 +12,22 @@
     "generate-json": "node scripts/jsonGenerator.js"
   },
   "dependencies": {
-    "@astrojs/image": "^0.18.0",
-    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/mdx": "^1.1.5",
     "@astrojs/react": "^3.0.3",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/svelte": "^3.1.1",
-    "@astrojs/tailwind": "^4.0.0",
+    "@astrojs/svelte": "^4.0.4",
+    "@astrojs/tailwind": "^5.0.2",
     "@fortawesome/fontawesome-free": "^6.4.2",
-    "astro": "^2.10.14",
-    "astro-auto-import": "^0.3.1",
+    "astro": "^3.6.1",
+    "astro-auto-import": "^0.4.1",
     "date-fns": "^2.30.0",
     "date-fns-tz": "^2.0.0",
     "disqus-react": "^1.1.5",
     "fuse.js": "^7.0.0",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
-    "marked": "^9.1.4",
+    "marked": "^10.0.0",
     "prettier-plugin-astro": "^0.12.0",
     "prettier-plugin-tailwindcss": "^0.5.5",
     "prop-types": "^15.8.1",
@@ -39,15 +38,15 @@
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
     "svelte": "^4.2.1",
-    "swiper": "^10.3.1"
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.4",
     "@tailwindcss/typography": "^0.5.10",
     "@types/leaflet": "^1.9.4",
     "@types/marked": "^6.0.0",
-    "@types/node": "20.8.6",
-    "@types/react": "18.2.33",
+    "@types/node": "20.10.0",
+    "@types/react": "18.2.38",
     "@types/react-dom": "18.2.17",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.50.0",
@@ -59,6 +58,6 @@
     "sass": "^1.68.0",
     "tailwind-bootstrap-grid": "^5.0.1",
     "tailwindcss": "^3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "5.3.2"
   }
 }
