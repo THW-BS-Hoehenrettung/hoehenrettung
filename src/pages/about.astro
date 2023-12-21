@@ -1,5 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
@@ -21,8 +20,7 @@ const { title, description, meta_title, image } = entry.data;
         <div class="text-center md:col-10 lg:col-7">
           {
             image && (
-              <Image
-                format="png"
+              <img
                 class="mx-auto mb-6 rounded-lg"
                 src={image}
                 width={200}
