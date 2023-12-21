@@ -9,9 +9,9 @@ draft: false
 Seit Ende 2008 verfügt die Fachgruppe Höhenrettung über ein neues Fahrzeug. 
 
 Der Gerätewagen Höhenrettung (GW-H) wurde als KLF (Kleinlöschfahrzeug) der Werkfeuerwehr PTB übernommen.
-![Als KLF der Werkfeuerwehr PTB](/images/vehicle/KLF.jpg)
+![Als KLF der Werkfeuerwehr PTB](/images/vehicle/KLF.webp)
 Nach einigen Umbauten und Umlackierung ist das Fahrzeug seit November 2008 im Dienst der Höhenrettungsgruppe:
-![Nach Umbau und Umlackierung](/images/vehicle/GWH.jpg)
+![Nach Umbau und Umlackierung](/images/vehicle/GWH.webp)
 
 ##### Fahrzeugdaten
 
