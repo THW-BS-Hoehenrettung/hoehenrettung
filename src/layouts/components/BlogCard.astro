@@ -1,5 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components";
 import config from "@/config/config.json";
 import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
 import { FaRegFolder, FaRegUserCircle } from "react-icons/fa/index.js";
@@ -15,8 +14,7 @@ const { title, image, date, author, categories } = data.data;
 <div class="bg-body dark:bg-darkmode-body">
   {
     image && (
-      <Image
-        format="png"
+      <img
         class="mb-6 w-full rounded"
         src={image}
         alt={title}

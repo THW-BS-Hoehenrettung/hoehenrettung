@@ -19,7 +19,7 @@
     "default_theme": "system",
     "pagination": 2,
     "summary_length": 200,
-    "blog_folder": "blog"
+    "blog_folder": "posts"
   },
 
   "params": {
@@ -27,15 +27,9 @@
     "copyright": "Copyright © YYYY THW Braunschweig Höhenrettung"
   },
 
-  "disqus": {
-    "enable": true,
-    "shortname": "themefisher-template",
-    "settings": {}
-  },
-
   "metadata": {
-    "meta_author": "zeon.studio",
+    "meta_author": "THW Braunschweig Höhenrettung",
     "meta_image": "/images/og-image.png",
-    "meta_description": "astro and tailwind boilerplate"
+    "meta_description": "THW Braunschweig Höhenrettung"
   }
 }
