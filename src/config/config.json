@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "THW Braunschweig Höhenrettung",
-    "base_url": "https://hoehenrettung-bs.de",
+    "base_url": "https://preview.hoehenrettung-bs.de/",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.svg",
