@@ -4,6 +4,7 @@ meta_title: "PSAgA"
 description: "PSAgA der THW Höhenrettung in Braunschweig"
 draft: false
 ---
+Ein Teil der Beladung des Höhenretters ist die **PSAgA**, diese ist für jede\*n Helfer\*in vorhanden.
 
 Zur **P**ersönlichen **S**chutz**a**usstattung **g**egen **A**bsturz gehören:
 - Vollgurt
