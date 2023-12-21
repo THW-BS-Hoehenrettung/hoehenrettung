@@ -1,0 +1,1 @@
+All pictures of this website are protected by copyright. Unless explicitly stated otherwise, the copyright lies with THW-Höhenrettung Braunschweig. Please ask if you would like to use the contents of this website.
