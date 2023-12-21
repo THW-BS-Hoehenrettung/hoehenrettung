@@ -1,7 +1,6 @@
 ---
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
-import DynamicIcon from "../helpers/DynamicIcon";
 import { markdownify } from "@/lib/utils/textConverter";
 
 const { footer }: { footer: { name: string; url: string }[] } = menu;
@@ -33,7 +32,13 @@ const { footer }: { footer: { name: string; url: string }[] } = menu;
                                 rel="noopener noreferrer nofollow"
                         >
                             <span class="sr-only">"github"</span>
-                            <DynamicIcon class="inline-block" icon="FaGithub"/>
+                            <!-- TODO: Fix Icon -->
+
+                            <!-- Insert a Github icon here -->
+                            
+                            <i class="fa fa-github"></i>
+
+                            <!-- <DynamicIcon class="inline-block" icon="FaGithub"/> -->
                         </a>
                     </li>
                 </ul>
