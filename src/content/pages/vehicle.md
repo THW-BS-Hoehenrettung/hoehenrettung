@@ -28,23 +28,7 @@ Nach einigen Umbauten und Umlackierung ist das Fahrzeug seit November 2008 im Di
 ##### Beladung:
 
 - Gerätesatz Höhenrettung
+  - PSAgA
 - Kleinwerkzeug
 - Verkehrssicherungsatz
 - 4-Teilige Steckleiter
-
-##### Gerätesatz Höhenrettung:
-Ein Teil der jetzigen Beladung. Die **PSAgA** ist für jeden Helfer vorhanden.
-
-Zur **P**ersönlichen **S**chutz**a**usstattung **g**egen **A**bsturz gehören:
-- Vollgurt
-- ID'S Abseilgerät
-- Achter Abseilgerät
-- Handsteigklemme
-- Seilrolle
-- HMS Karabiner
-- Express Schlinge
-- Standplatzpositionierung mit Rohrgerüsthaken
-- Y-Verbindungsmittel mit Falldampfer
-- Rettungsmesser
-- Bandschlinge
-- Reepschnur in verschiedenen Längen
