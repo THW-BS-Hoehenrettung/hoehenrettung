@@ -1,8 +1,8 @@
 {
-  "name": "astroplate",
+  "name": "thw-hoehenrettung",
   "version": "1.3.0",
-  "description": "Astro and Tailwindcss boilerplate",
-  "author": "zeon.studio",
+  "description": "Website of the THW Hoehenrettung Braunschweig",
+  "author": "thw-hoehenrettung",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
   "scripts": {
