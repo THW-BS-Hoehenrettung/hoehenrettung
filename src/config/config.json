@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "THW Braunschweig Höhenrettung",
-    "base_url": "https://hoehenrettung-bs.de",
+    "base_url": "https://preview.hoehenrettung-bs.de/",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.svg",
@@ -19,23 +19,17 @@
     "default_theme": "system",
     "pagination": 2,
     "summary_length": 200,
-    "blog_folder": "blog"
+    "blog_folder": "posts"
   },
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Copyright © YYYY THW Braunschweig Höhenrettung"
-  },
-
-  "disqus": {
-    "enable": true,
-    "shortname": "themefisher-template",
-    "settings": {}
+    "copyright": "© Copyright YYYY - Alle Inhalte dieser Internetseite, insbesondere Texte, Fotografien und Grafiken, sind urheberrechtlich geschützt. <br> Das Urheberrecht liegt, soweit nicht ausdrücklich anders gekennzeichnet, bei der THW-Höhenrettung Braunschweig. <br> Bitte fragen Sie, falls Sie die Inhalte dieses Internetangebotes verwenden möchten."
   },
 
   "metadata": {
-    "meta_author": "zeon.studio",
+    "meta_author": "THW Braunschweig Höhenrettung",
     "meta_image": "/images/og-image.png",
-    "meta_description": "astro and tailwind boilerplate"
+    "meta_description": "THW Braunschweig Höhenrettung"
   }
 }

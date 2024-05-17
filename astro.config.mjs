@@ -1,4 +1,3 @@
-import image from "@astrojs/image";
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
@@ -13,14 +12,14 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-    site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
+    site: config.site.base_url ? config.site.base_url : "https://preview.hoehenrettung-bs.de/",
     base: config.site.base_path ? config.site.base_path : "/",
     trailingSlash: config.site.trailing_slash ? "always" : "never",
     integrations: [react(), sitemap(), tailwind({
         config: {
             applyBaseStyles: false
         }
-    }), image(), AutoImport({
+    }),  AutoImport({
         imports: ["@/shortcodes/Button", "@/shortcodes/Accordion", "@/shortcodes/Notice", "@/shortcodes/Video", "@/shortcodes/Youtube", "@/shortcodes/Tabs", "@/shortcodes/Tab"]
     }), mdx(), svelte()],
     markdown: {

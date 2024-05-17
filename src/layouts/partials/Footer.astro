@@ -1,54 +1,53 @@
 ---
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
-import DynamicIcon from "../helpers/DynamicIcon";
 import { markdownify } from "@/lib/utils/textConverter";
+import { IoLogoGithub } from "react-icons/io5/index.js";
 
 const { footer }: { footer: { name: string; url: string }[] } = menu;
 ---
 
 <footer class="bg-theme-light dark:bg-darkmode-theme-light">
-    <div class="container">
-        <div class="row items-center">
-            <div class="mb-4 text-center lg:col-3 lg:mb-0 lg:text-left">
-            </div>
-            <div class="mb-4 text-center lg:col-6 lg:mb-0">
-                <ul>
-                    {
-                      footer.map((menu) => (
-                        <li class="m-3 inline-block">
-                            <a href={menu.url}>{menu.name}</a>
-                        </li>
-                      ))
-                    }
-                </ul>
-            </div>
-            <div class="mb-4 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
-                <ul class="social-icons">
-                    <li class="m-3 inline-block">
-                        <a
-                                aria-label="github"
-                                href="https://github.com/THW-BS-Hoehenrettung/hoehenrettung"
-                                target="_blank"
-                                rel="noopener noreferrer nofollow"
-                        >
-                            <span class="sr-only">"github"</span>
-                            <DynamicIcon class="inline-block" icon="FaGithub"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row items-center">
+      <div class="mb-4 text-center lg:col-3 lg:mb-0 lg:text-left"></div>
+      <div class="mb-4 text-center lg:col-6 lg:mb-0">
+        <ul>
+          {
+            footer.map((menu) => (
+              <li class="m-3 inline-block">
+                <a href={menu.url}>{menu.name}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="mb-4 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
+        <ul class="social-icons">
+          <li class="m-3 inline-block">
+            <a
+              aria-label="github"
+              href="https://github.com/THW-BS-Hoehenrettung/hoehenrettung"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <span class="sr-only">"github"</span>
+              <IoLogoGithub />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="border-t border-border py-5 dark:border-darkmode-border">
-        <div class="container text-center text-light dark:text-darkmode-light">
-            <p id="copyright" set:html={markdownify(config.params.copyright)} />
-        </div>
+  </div>
+  <div class="border-t border-border py-5 dark:border-darkmode-border">
+    <div class="container text-center text-light dark:text-darkmode-light">
+      <p id="copyright" set:html={markdownify(config.params.copyright)} />
     </div>
+  </div>
 </footer>
 <script lang="ts">
-    const currentYear = new Date().getFullYear();
-    const copyrightElement = document.getElementById("copyright");
-    const updatedString = copyrightElement.innerHTML.replace("YYYY", currentYear);
-    copyrightElement.innerHTML = updatedString;
+  const currentYear = new Date().getFullYear();
+  const copyrightElement = document.getElementById("copyright");
+  const updatedString = copyrightElement.innerHTML.replace("YYYY", currentYear);
+  copyrightElement.innerHTML = updatedString;
 </script>

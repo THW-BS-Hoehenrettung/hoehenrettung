@@ -1,99 +1,38 @@
 ---
 import Base from "@/layouts/Base.astro";
-import CallToAction from "@/partials/CallToAction.astro";
-import Testimonial from "@/partials/Testimonial.astro";
-import {Image} from "@astrojs/image/components";
 import LandingPageMap from "../components/LandingPageMap.astro";
 import BannerCarousel from "../components/carousel";
+import Contact from "../components/Contact.astro";
+import History from "../components/History.astro";
+import UseCases from "../components/UseCases.astro";
+import PostSection from "../components/PostSection.astro";
 ---
 
 <Base>
-<!-- Banner -->
-<section class="section pt-0">
-    <div class="container">
-        <div class="row justify-center">
-            <div class="col-12">
-                <BannerCarousel client:load />
-                <!-- <img class="rounded-2xl" src="/images/picture01.jpg" alt="Banner"/>-->
-            </div>
-            <!--<div class="mt-4 text-center lg:col-7">-->
-            <!--    <h1>THW-Höhenrettung Braunschweig</h1>-->
-            <!--    &lt;!&ndash;<p>Seit 1998 in Braunschweig</p>&ndash;&gt;-->
-            <!--</div>-->
-
-        </div>
-    </div>
-</section>
-
-<!-- Use cases -->
-<section class="section-sm bg-gradient">
-    <div class="container">
-        <div class="row items-center justify-between">
-            <div class="mb:md-0 mb-6 md:col-5 md:order-2">
-                <div class="w-auto max-w-xl md:float-right">
-                    <img class="rounded-2xl" src="/images/einsatzmoeglichkeiten.jpg" alt="Einsatzmoeglichkeiten"/>
+    <!-- Banner -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col-12">
+                    <BannerCarousel client:load/>
                 </div>
             </div>
-            <div class="md:col-7 lg:col-6 md:order-2">
-                <h2 class="mb-4">Einsatzmöglichkeiten </h2>
-                <p class="mb-4 text-lg">Als Höhenretter sind wir vielseitig einsetzbar. Zu unseren
-                    Haupt-Einsatzmöglichkeiten gehören:</p>
-                <ul>
-                    <li class="mb-4">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <span>Rettung von Personen aus der Höhe</span>
-                    </li>
-                    <li class="mb-4">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <span>Rettung von Personen aus der Tiefe</span>
-                    </li>
-                    <li class="mb-4">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <span>Sicherung von Einsatzkräften in absturzgefährdeten Bereichen</span>
-                    </li>
-                    <li class="mb-4">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <span>Technische Hilfeleistung in Höhen und Tiefen</span>
-                    </li>
-                </ul>
-                <a class="btn btn-primary mt-5" href="/einsatzmoeglichkeiten">
-                    Mehr Erfahren
-                </a>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- History -->
-<section class="section-sm bg-gradient">
-    <div class="container">
-        <div class="row items-center justify-between">
-            <div class="mb:md-0 mb-6 md:col-5 md:order-2">
-                <div class="w-auto max-w-xl md:float-left">
-                    <img class="rounded-2xl" src="/images/geschichte.jpg" alt="Geschichte"/>
-                </div>
-            </div>
-            <div class="md:col-7 lg:col-6 md:order-1 md:text-right">
-                <h2 class="mb-4">Geschichte </h2>
-                <p class="mb-4 text-lg">
-                    Die THW-Höhenrettungsgruppe in Braunschweig besteht seit 1998. Unsere Wurzeln reichen aber bis in
-                    das Jahr 1993.
-                </p>
-                <a class="btn btn-primary mt-5" href="/geschichte">
-                    Mehr Erfahren
-                </a>
-            </div>
+    <History></History>
+
+    <UseCases></UseCases>
+
+    <PostSection></PostSection>
+
+    <Contact></Contact>
+
+    <!-- Map -->
+    <section class="section-sm bg-gradient">
+        <div class="container">
+            <LandingPageMap/>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Map -->
-<section class="section-sm bg-gradient">
-    <div class="container">
-        <LandingPageMap/>
-    </div>
-</section>
-
-<!--<Testimonial testimonial={testimonial}/>-->
-<!--<CallToAction call_to_action={call_to_action}/>-->
 </Base>
