@@ -7,12 +7,6 @@ import dateFormat from "@/lib/utils/dateFormat";
 import similerItems from "@/lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 
-import {
-  FaRegClock,
-  FaRegFolder,
-  FaRegUserCircle,
-} from "react-icons/fa/index.js";
-
 const { blog_folder } = config.settings;
 const posts = await getSinglePage(blog_folder);
 const { post } = Astro.props;
@@ -42,15 +36,15 @@ const { title, description, author, categories, image, date, tags } = post.data;
         <ul class="mb-4">
           <li class="mr-4 inline-block">
             <a href={`/authors/${slugify(author)}`}>
-              <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
+              <i class="fa-regular fa-user"></i>
               {humanize(author)}
             </a>
           </li>
           <li class="mr-4 inline-block">
-            <FaRegFolder className={"mr-2 -mt-1 inline-block"} />
             {
               categories.map((category: string, index: number) => (
                 <a href={`/categories/${slugify(category)}`}>
+                  <i class="fa-regular fa-folder" />
                   {humanize(category)}
                   {index !== categories.length - 1 && ","}
                 </a>
@@ -58,7 +52,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
             }
           </li>
           <li class="mr-4 inline-block">
-            <FaRegClock className={"mr-2 -mt-1 inline-block"} />
+            <i class="fa-regular fa-clock"></i>
             {dateFormat(date)}
           </li>
         </ul>
