@@ -2,7 +2,6 @@
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import { markdownify } from "@/lib/utils/textConverter";
-import { IoLogoGithub } from "react-icons/io5/index.js";
 
 const { footer }: { footer: { name: string; url: string }[] } = menu;
 ---
@@ -32,7 +31,7 @@ const { footer }: { footer: { name: string; url: string }[] } = menu;
               rel="noopener noreferrer nofollow"
             >
               <span class="sr-only">"github"</span>
-              <IoLogoGithub />
+              <i class="fa-brands fa-github"></i>
             </a>
           </li>
         </ul>

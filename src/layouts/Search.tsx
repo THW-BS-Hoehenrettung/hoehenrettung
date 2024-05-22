@@ -2,11 +2,6 @@ import config from "@/config/config.json";
 import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
 import Fuse from "fuse.js";
 import React, { useEffect, useRef, useState } from "react";
-import {
-  FaRegFolder,
-  FaRegUserCircle,
-  FaSearch,
-} from "react-icons/fa/index.js";
 
 const { summary_length, blog_folder } = config.settings;
 
@@ -85,7 +80,7 @@ const Search = ({ searchList }: Props) => {
                 ref={inputRef}
               />
               <button className="btn btn-primary rounded-l-none" type="submit">
-                <FaSearch />
+                <i className="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
           </div>
@@ -138,20 +133,18 @@ const Search = ({ searchList }: Props) => {
                   <ul className="mb-4">
                     <li className="mr-4 inline-block">
                       <a href={`/authors/${slugify(item.data.author)}`}>
-                        <FaRegUserCircle
-                          className={"-mt-1 mr-2 inline-block"}
-                        />
+                        <i className="fa-regular fa-user -mt-1 mr-2 inline-block"></i>
                         {humanize(item.data.author)}
                       </a>
                     </li>
                     <li className="mr-4 inline-block">
-                      <FaRegFolder className={"-mt-1 mr-2 inline-block"} />
                       {item.data.categories.map(
                         (category: string, index: number) => (
                           <a
                             href={`/categories/${slugify(category)}`}
                             key={category}
                           >
+                            <i className="fa-regular fa-folder -mt-1 mr-2 inline-block" />
                             {humanize(category)}
                             {index !== item.data.categories.length - 1 && ", "}
                           </a>
